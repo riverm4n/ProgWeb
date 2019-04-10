@@ -1,0 +1,21 @@
+body {
+  background-image: url("1216x973x2.jpg");
+  background-size: 1080px 720px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #A3FFCC;
+}
+
+div {
+  margin-left: 700px;
+  margin-top: 30px;
+  background-color: rgba(164, 255, 107, 0.5);
+  width: 400px;
+
+  border: 10px solid rgba(204, 136, 75, 0.5);
+  border-radius: 25px;
+
+  padding: 8px 16px 8px 20px;
+
+  box-shadow: 4px 4px 8px 0px;
+}

@@ -1,0 +1,101 @@
+<!-- Segunda página feita em HTML para aplicar os conhecimentos obtidos com formulários, a tag form e os tipos de input -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Instituto de Computação: Contato</title>
+  </head>
+  <body>
+    <h1>Formulário de Contato</h1> <!--Adicionar mais tarde logo do icomp aqui, assim como no favicon-->
+    <p>
+      Por favor, preencha o formulário que se encontra abaixo e clique no botão "Enviar Mensagem". Agradecemos por seu contato.
+    </p>
+    <div id="contact-form">
+      <form id="contact" method="GET">
+        <fieldset>
+          <legend>Seus Dados Básicos</legend>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name"></br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="seunome@dominio.com.br"></br>
+            <label for="site">Website:</label>
+            <input type="url" name="site" id="site" placeholder=https://example.com>
+        </fieldset>
+        <fieldset>
+          <legend>Seu curso no Instituto de Computação</legend>
+          <input type="radio" name="curso" value="cs">
+          <label for="cs">Ciência da Computação</label></br>
+          <input type="radio" name="curso" value="ce">
+          <label for="ce">Engenharia da Computação</label></br>
+          <input type="radio" name="curso" value="se">
+          <label for="se">Engenharia de Software</label></br>
+        </fieldset>
+        <fieldset>
+          <legend>Assinale as Linguagens de Programação que você já utilizou:</legend>
+          <input type="checkbox" name="ling" id="java" value="java">
+          <label for="java">Java</label>
+          <input type="checkbox" name="ling" id="c" value="c">
+          <label for="c">C</label>
+          <input type="checkbox" name="ling" id="cpp" value="cpp">
+          <label for="cpp">C++</label>
+          <input type="checkbox" name="ling" id="php" value="php">
+          <label for="perl">PHP</label>
+          <input type="checkbox" name="ling" id="py" value="py">
+          <label for="py">Python</label>
+          <input type="checkbox" name="ling" id="js" value="js">
+          <label for="js">Javascript</label>
+          <input type="checkbox" name="ling" id="ada" value="ada">
+          <label for="ada">Ada</label>
+          <input type="checkbox" name="ling" id="cs" value="cs">
+          <label for="cs">C#</label>
+          <input type="checkbox" name="ling" id="perl" value="perl">
+          <label for="perl">Perl</label>
+          <input type="checkbox" name="ling" id="ruby" value="ruby">
+          <label for="ruby">Ruby</label></br>
+          <label for="other">Alguma outra? Nos diga aqui:</label>
+          <input type="text" name="other" id="other">
+        </fieldset>
+        <fieldset>
+          <legend>Dados Complementares</legend>
+          <label for="color">Cor Favorita:</label>
+          <input type="color" value="#000000"></br>
+          <label for="birth">Data de Nascimento:</label>
+          <input type="date" name="birth" id="birth"></br>
+          <label for="freshman">Ano de Entrada em seu Curso do IComp</label>
+          <input type="number" name="freshman" min="1980" max="2019" step="1" value="2000" id="freshman"></br>
+          <label for="nota">Nota para este site</label>
+          <input type="range" name="nota" min="0" max="10" step="1"> <!-- Depois checar a API e verificar os diferentes tipos de range, inclusive podendo utilizar listas-->
+        </fieldset>
+        <fieldset>
+          <legend>Área de Atuação</legend>
+          <select name="area" id="area"> <!--Notar que não estamos mais utilizando o input-->
+            <option value="1">Banco de Dados</option>
+            <option value="2">Educação a Distância</option>
+            <option value="3">Engenharia de Software</option>
+            <option value="4">Inteligência Artificial</option>
+            <option value="5">Otimização, Algoritmos e Complexidade Computacional</option>
+            <option value="6">Programação para Web</option>
+            <option value="7">Recuperação de Informação</option>
+            <option value="8">Redes de Computadores e Sistemas Distribuídos</option>
+            <option value="9">Sistemas Embarcados</option>
+            <option value="10">Visão Computacional e Robótica</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Submeta o seu Currículo Vitae</legend>
+          <input type="file" name="curriculum">
+        </fieldset>
+        <fieldset>
+          <legend>Digite a sua Mensagem:</legend>
+          <textarea name="message" rows="4" cols="50" required>
+          Esta é a mensagem padrão!
+          </textarea>
+        </fieldset>
+      </br>
+        <input type="reset" value="Resetar os Dados"/>
+        <input type="submit" name="submit" value="Enviar Mensagem"/>
+      </form>
+    </div>
+  </body>
+</html>
