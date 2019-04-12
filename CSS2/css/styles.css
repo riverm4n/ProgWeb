@@ -4,6 +4,8 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: #A3FFCC;
+  width: 100%;
+  max-width: 1440px;
 }
 
 div {
@@ -17,5 +19,5 @@ div {
 
   padding: 8px 16px 8px 20px;
 
-  box-shadow: 4px 4px 8px 0px;
+  box-shadow: 4px 4px 8px 0px;  
 }
