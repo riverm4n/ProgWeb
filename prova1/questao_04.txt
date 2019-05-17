@@ -1,0 +1,19 @@
+Questão 4 da prova: No diretório prova01, crie um arquivo chamado questao_04.txt contendo uma breve
+explicação sobre o significado de hoisting. Ainda neste arquivo, descreva como o hoisting afeta a
+interpretação de um código JavaScript, e dê um exemplo de código que explora (usa) essa
+característica da linguagem.
+
+Resposta: Em JavaScript, o hoisting é uma técnica que, levando em consideração o escopo de uma função
+declarada, eleva essa função para o topo deste mesmo escopo. Por exemplo, se uma função possui escopo
+global, esta é elevada até o topo do script, o mesmo vale para funções aninhadas (definidas dentro de
+outras funções). Isso permite que possamos chamar funções antes das mesmas estarem declaradas, como no
+exemplo abaixo:
+
+var exemplo = function(){
+  var exemplo = 2;
+  foo(exemplo);
+
+  var foo = function(var numero){
+    numero = numero + 2;
+  }
+}
