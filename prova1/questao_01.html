@@ -1,0 +1,77 @@
+<!-- Questão 01 da Prova: (2.0) O código abaixo, feito em HTML, CSS e JavaScript, possui 4 (quatro) erros sintáticos.
+Identifique as linhas onde tais erros ocorreram, e crie um arquivo chamado questao_01.txt cujo
+conteúdo deve conter uma descrição dos quatro erros, as linhas onde tais erros ocorreram, e o que
+deve ser feito para corrigí-los. -->
+
+<!DOCTYPE html>
+  <html>
+  <head>
+    <!-- Em teoria, a tag meta deveria ser utilizada aqui para definir o charset da página -->
+    <!-- Comentários em HTML não se escrevem com a notação de barra e asterisco -->
+    /* Isto é um comentário e não deve aparecer na página */
+    <title>Instituto de Computação</title>
+    <style>
+      #para {
+        color = red;
+        background-color = blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Instituto de Computação</h1>
+    <p id="para">
+      O Instituto de Computação (IComp), antigo
+      <strong>Departamento de Ciência <!-- A tag <strong> é aberta aqui, porém nunca encerrada -->
+      da Computação (DCC), é um instituto acadêmico
+      que agrega os professores da área de computação.
+    </p>
+    <script>
+      var instituto = {
+        nome: "Instituto de Computação",
+        getNome: function () {
+          return that.nome; //Não há referência para um objeto chamado 'that' em javascript.
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- Respostas:
+1 - (Aparentemente não é um erro, mas deve fazer parte das boas práticas) Entre
+as linhas 3 e 12, no cabeçalho da página, é necessário o uso da tag <meta>,
+de forma a informar os dados sobre a página, especialmente o conjunto de caracteres
+da mesma, por padrão, utf-8.
+
+<meta charset="utf-8">
+
+______________________________________________________________________________________
+
+2 - Na linha 17, dentro de <p>, o uso da tag <strong> é iniciado, porém a mesma nunca
+se encerra, fazendo todo o texto inserido a partir daquele momento ficar em negrito.
+O correto seria:
+
+<strong>Departamento de Ciência da Computação (DCC)</strong>
+
+______________________________________________________________________________________
+
+3 - Na linha 25, há uma referência sendo feita a um objeto 'that' e acredito que pela
+não declaração do mesmo e ele não ser um literal da linguagem, busca-se referenciar
+ao próprio objeto através do this.
+
+return this.nome;
+
+_____________________________________________________________________________________
+
+4 - Na linha 4, há um comentário sendo feito na notação que utilizamos em outras
+linguagens, como C, Java e JavaScript, entretanto, este não é o comentário aceito
+por uma página HTML. Comentários em HTML devem ser escritos da seguinte maneira: -->
+
+<!-- Este é um comentário e não deve aparecer na página -->
+<!--
+_____________________________________________________________________________________
+
+5 - Na linha 7, a forma como o seletor CSS está sendo utilizado está errada. Para
+selecionar pelo id, não utilizamos o #. Da forma que está, as alterações feitas
+com a tag <style> não estão sofrendo alterações.
+
+_____________________________________________________________________________________
