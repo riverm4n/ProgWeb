@@ -1,0 +1,58 @@
+<!-- QUESTÃO 10) Analisando o código HTML/CSS e a página resultante abaixo. Que
+tipo de seletor CSS pode ser usado para selecionar, de uma única vez, os dois
+trechos com borda mostrados na página?
+
+RESPOSTA: ambos os links estão definidos por classes, entretanto, não pertencem
+a mesma. A solução trivial seria utilizar o seletor por classe e completar
+o espaço em branco com .c11, .c11 c12.
+-->
+
+<!-- QUESTÃO 11) O que é tipagem dinâmica de variáveis, adotada pela linguagem
+Javascript? Escreva um breve código que demonstre a característica da linguagem.
+
+RESPOSTA: Existem dois tipos mais comuns de tipagem em linguagens de programação,
+a tipagem estática, que temos em linguagens como C e Java, onde uma variável tem
+um tipo associado a ela ainda em sua declaração e ela sempre será desse tipo, já
+a tipagem dinâmica atribui o tipo da variável ao valor associado a mesma, o que
+garante que a variável possa pertencer a diversos tipos em diferentes instantes
+ao longo da aplicação.
+
+no node:
+  var exemplo = "exemplo";
+  typeof exemplo;
+  exemplo = 2;
+  typeof exemplo;
+-->
+
+<!-- QUESTÃO 12) Descreva o que faz a seguinte sequência de código: -->
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Questão 12</title>
+    </head>
+    <body>
+      <div id="icomp">Instituto de Computação</div>
+      <button id="add">Adicionar Estilo</button>
+      <button id="clean">Limpar Estilo</button>
+
+      <script>
+        var icomp = document.getElementById("icomp");
+        document.getElementById("add").onclick = function(){
+          icomp.style.setProperty("background-color", "lightgrey");
+          icomp.style.setProperty("color", "red");
+          icomp.style.setProperty("font-size", "32px");
+        }
+
+        document.getElementById("clean").onclick = function(){
+          icomp.style.removeProperty("background-color");
+          icomp.style.removeProperty("color");
+          icomp.style.removeProperty("font-size");
+        }
+      </script>
+    </body>
+  </html>
+
+<!-- RESPOSTA: Aqui, como aprendemos na aula sobre Document Object Model, estamos
+acessando e manipulando o stylesheet do CSS através de código em JavaScript! -->

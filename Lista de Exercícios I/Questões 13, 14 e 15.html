@@ -1,0 +1,45 @@
+<!-- QUESTÃO 13) Cite duas vantagens que o método externo, usado para incluir código javascript
+sobre uma página, possui sobre o método embarcado.
+
+RESPOSTA: A primeira vantagem está relacionada ao fato de sempre se preferir utilizar métodos
+externos (tanto para estilos quanto para scripts), uma vez que não é indicado misturar-se
+conteúdo, estilo e comportamento. Além disso, funciona muito bem com os controles de versionamento
+modernos, como o GIT e permite maior praticidade na hora de edições paralelas, reduzindo o
+número de conflitos. -->
+
+<!-- QUESTÃO 14) A função javascript window.alert(string) é usada para aparesentar uma caixa de
+alerta com o conteúdo da string passada por parâmetro. Construa uma páginas HTML contendo um
+único botão. Quando o usuário clicar nesse botão, ser exibida uma caixa de alerta com o texto
+Botão Pressionado. Use o método addEventListener para programar o evento click do botão.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Questão 14 - Botão</title>
+  </head>
+  <body>
+    <div id="botaoPressionado">Alerta!</div>
+    <button id="botao">Clique aqui</button>
+
+    <script>
+      var button = document.getElementById("botao");
+      button.addEventListener("click", function(){
+        window.alert("Botão Pressionado!");
+      });
+    </script>
+  </body>
+</html>
+
+<!-- QUESTÃO 15) Qual é o resultado da execução do código abaixo? Porque?
+(function(){
+  var a = 5;
+})();
+
+console.log(a);
+
+RESPOSTA: A resposta indica que a variável a não está definida, uma vez que,
+quando declaramos uma variável dentro de uma função, ela acaba possuindo escopo
+local e é criada e destruída enquanto executada, o que não permite que ela
+seja acessada e/ou alterada por qualquer código fora da função. -->

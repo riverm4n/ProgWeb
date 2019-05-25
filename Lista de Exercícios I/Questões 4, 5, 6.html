@@ -1,0 +1,54 @@
+<!-- QUESTÃO 4) O que são caracteres especiais em HTML? Em que circunstâncias eles
+devem ser utilizados?
+
+RESPOSTA: Os caracteres especiais em HTML são referências para representar caracteres
+que geralmente não podem ser escritos normalmente ou que possuem algum outro tipo de conflito.
+Exemplos são os caracteres gregos (&lamba e &theta) e os caracteres comerciais (&euro e &trade).
+-->
+
+<!-- QUESTÃO 5) Descreva o seguinte fluxo para edição e versionamento de arquivos, adotado pelo
+controle de versões do GIT. O que são o working directory, o index e o repository? Além disso,
+para que servem os comandos git add e git commit representados no fluxo?
+
+RESPOSTA: O Fluxo do git após o inicío do repositório (através do comando git init) é working
+directory -> index (ou staging area) -> repository. o working directory são os arquivos que
+ainda não estão adicionados ou que ainda não foram atualizados no repositório git, o comando
+git add serve para que possamos selecionar os arquivos que sofreram alterações ou foram criados
+que desejamos que sejam versionados, e é nesse instante que eles do directory vão para o index,
+que é uma área de preparação, eles estão no aquecimento mas ainda não entraram em campo. através
+do comando git commit, todos os arquivos que estão na staging area são versionados e então, chegam
+ao repository.
+-->
+
+<!-- QUESTÃO 6) Descreva o que são estilos inline, estilos embarcados, e estilos externos. Escolha
+um dos três tipos de estilo e demonstre a sua utilização e m um código HTML/CSS.
+
+RESPOSTA: Estilos estão relacionados aos meios em que podemos adicionar CSS ao nosso código HTML,
+o estilo in line, como o nome diz, com o elemento <style> "na linha", contido no body do código (e é horrível),
+e acabam separando conteúdo de apresentação. o estilo embarcado consiste em inserir o <style> no cabeçalho
+da página, e acessando os elementos diretamente através dos seletores CSS, entretanto, isso ainda não separa
+conteúdo de estilo totalmente. O mais indicado é utilizar o método externo, onde há uma referência a um
+arquivo .css externo ao HTML, o que garante que diferentes páginas possam usar o mesmo arquivo de estilo,
+tornam o código mais uniforme e legível, além tornar a navegação mais rápida, devido ao cacheamento do browser.
+
+Exemplo do estilo embarcado:-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo Embarcado</title>
+    <style>
+      p {
+        font-size: 18px;
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Esse é um exemplo do Estilo Embarcado do CSS</br></br>
+      Nada demais.
+    </p>
+  </body>
+</html>

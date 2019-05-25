@@ -1,0 +1,42 @@
+<!-- QUESTÃO 16) Qual é o resultao do código abaixo? Esse resultado sofreu a influência
+de hoisting?
+
+A saída é undefined e 2, uma vez que a atribuição a variável a é feita ainda antes da
+execução da função. Contudo, foo() é executado por sofre a influência de hoisting, que
+trás a declaração da função para o topo de seu escopo, em tempo de execução.
+-->
+
+<!-- QUESTÃO 17) Qual é o resultado da execução do código abaixo? Por que?
+
+Questão 17.js
+
+RESPOSTA: A saída será: Aurelio de Rosa e undefined. O Aurelio de Rosa foi o retorno
+da função getFullname, enquanto que o conteúdo de getFullname (o objeto) não está
+acessível por fora do escopo do mesmo (incerteza nessa afirmação e se é esta a razão
+de fato para a saída específica do código).
+-->
+
+<!-- QUESTÃO 18) Na linguagem Javascript, qual é a diferença entre == e ===?
+
+RESPOSTA: Enquanto que o "=="  compara somente os valores das variáveis, o
+operador "===" (igualdade estrita) compara o valor e o sinal das mesmas.
+-->
+
+<!-- QUESTÃO 19) O que são closures? Descreva o funcionamento do código abaixo.
+
+Questão 19.js
+
+RESPOSTA: Closure é o mecanismo de Javascript que permite fazer o uso de encapsu-
+lamento do código e simular controles existentes em outras linguagens orientadas
+a objetos, para criação de variáveis privadas, por exemplo. As closures utilizam
+bastante a ideia de escopo que foi estudada, funções aninhadas (dentro de outras
+funções) tem a capacidade de acessar o valor de variáveis que foram definidas no
+escopo de sua função pai.
+
+No codigo, moo se torna um closure para foo(2) e agora, pode fazer chamada para a
+função aninhada do mesmo (function(y)). Na primeira chamada, ele soma 1 (moo(1)),
+2 (foo(2)) e 4(++baz). E como uma closure lembra consegue guardar o contexto (isso
+se deve ao fato de que é feita uma cópia da referência da variável, e não de seu
+valor).
+
+-->

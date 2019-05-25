@@ -1,0 +1,40 @@
+<!--QUESTÃO 1) O código abaixo, feito em HTML, possui um grave erro sintático. Assinale qual é esse
+erro e descreve o que precisa ser feito para corrigir-lo -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Instituto de Computação</title>
+  </head>
+  <body>
+    <!--<meta charset="utf-8"> estava aqui originalmente -->
+    <h1>Instituto de Computação</h1>
+    <img src='Imagens/icomp.png' width='260' height='111' alt='IComp'>
+    <p>
+      O <strong>Instituto de Computação (IComp)</strong> é um instituto acadêmico
+      da Universidade Federal do Amazonas que atua no ensino, pesquisa e extensão.
+    </p>
+  </body>
+  <!-- Fim da página-->
+</html>
+
+<!-- RESPOSTA:
+O Grave erro sintático do código apresentado acima está relacionado com o componente meta,
+que deve estar inserido no HEAD, uma vez que a mesma prover os dados sobre os dados da página,
+faz sentido que a mesma esteja no 'cabeçalho'. A prática não é bem vista pelos desenvolvedores
+até porque a primeira coisa que o browser e a máquina de busca identificam é o head, apesar disso,
+muitos browsers acabam lendo páginas mesmo com o componente meta no body, provavelmente quando ele
+renderiza a página, acaba inserindo a mesma no head, a solução é apenas colocar a linha para o head,
+de preferência acima do title.
+-->
+
+<!-- QUESTÃO 2) No código acima, usamos os atributos height e width para informar as dimensões da imagem
+imanges/icomp.png ao browser. Qual a importância desse procedimento, uma vez que o broser é capaz de identificar
+tais dimensões após o carregamento da imagem?
+
+RESPOSTA:
+Quando trabalhando com imagens, é de fundamental importância que os atributos width e height sejam setados
+inicialmente para facilitar a vida o browser, que já irá conhecer as dimensões da imagem quando for copiar
+a mesma, o que torna mais prática também a configuração do layout da página.
+-->
