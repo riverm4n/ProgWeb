@@ -2,16 +2,16 @@ module.exports = {
   attributes: {
     nome: {
       type: 'string',
-      columnType: 'varchar',
+      columnType: 'varchar(100)',
       required: true,
-      unique: true
-    }
+      maxLength: 100
+    },
 
     sigla: {
       type: 'string',
-      columnType: 'char',
-      unique: true
-    }
+      columnType: 'char(4)',
+      required: true
+    },
 
     descricao: {
       type: 'string',
