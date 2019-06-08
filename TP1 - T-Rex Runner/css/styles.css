@@ -30,3 +30,21 @@
   position: absolute;
   z-index: 0;
 }
+
+.cactus{
+  width: 18px;
+  height: 35px;
+  background-image: url(sprites.png);
+  background-position: -228px 2px;
+  position: absolute;
+  z-index: 2;
+}
+
+.ptero{
+  width: 47px;
+  height: 40px;
+  background-image: url(sprites.png);
+  background-position: -133px 2px;
+  position: absolute;
+  z-index: 2;
+}
