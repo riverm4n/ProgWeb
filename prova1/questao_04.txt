@@ -1,3 +1,6 @@
+David: Hoisting definido corretamente. Código de exemplo correto.
+Nota: 2.0
+
 Questão 4 da prova: No diretório prova01, crie um arquivo chamado questao_04.txt contendo uma breve
 explicação sobre o significado de hoisting. Ainda neste arquivo, descreva como o hoisting afeta a
 interpretação de um código JavaScript, e dê um exemplo de código que explora (usa) essa
